@@ -1,19 +1,21 @@
-logoText = "Zzo"
+logoText = "MarkWengSTR"
 logoType = "short" # long, short
-description = "The Zzo theme for Hugo example site."
+logo = true
+description = "Electric Machine designer & programmer, web developer"
 custom_css = []
 custom_js = []
-useFaviconGenerator = true # https://www.favicon-generator.org/
+useFaviconGenerator = false # https://www.favicon-generator.org/
 meta_image = ""
 themecolor = ""
 
-themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
+# themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
+themeOptions = ["kimbie", "dark", "light"]
 notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery"]
 
-viewportSize = "normal" # widest, wider, wide, normal, narrow
+viewportSize = "wide" # widest, wider, wide, normal, narrow
 enableUiAnimation = true
 hideSingleContentsWhenJSDisabled = false
 
@@ -33,21 +35,21 @@ enableWhoami = true
 summaryShape = "classic" # card, classic, compact
 searchResultPosition = "main" # side, main
 archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
-archivePaginate = 13
+archivePaginate = 10
 paginateWindow = 1
 talksPaginate = 5
 talksGroupByDate = "2006"
 pubPaginate = 20
 
 # whoami
-myname = "zzossig"
-email = "zzossig@gmail.com"
-whoami = "Web Developer"
+myname = "Mark Weng"
+email = "bskin0330@gmail.com"
+whoami = "Electric Machine designer & programmer, web developer"
 bioImageUrl = ""
 useGravatar = false
-location = "Seoul, Korea"
-organization = "Hugo"
-link = "https://zzossig.io/ko"
+location = "Taiwan"
+organization = ""
+link = ""
 
 # sidebar
 enableBio = true
@@ -72,7 +74,7 @@ enableSidebarPostsByOrder = false
 showPoweredBy = true
 showFeedLinks = true
 showSocialLinks = true
-enableLangChange = true
+enableLangChange = false
 enableThemeChange = true
 
 # service
@@ -141,16 +143,16 @@ commento = false
   dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions]
-  email = "mailto:your@email.com"
+  email = "bskin0330@gmail.com"
   phone = ""
-  facebook = "http://example.org/"
-  twitter = "http://example.org/"
-  github = "https://github.com/zzossig/hugo-theme-zzo"
+  facebook = ""
+  twitter = ""
+  github = "https://github.com/MarkWengSTR"
   stack-overflow = ""
   instagram = ""
   google-plus = ""
   youtube = ""
-  medium = ""
+  medium = "https://medium.com/@bskin"
   tumblr = ""
   linkedin = ""
   pinterest = ""
@@ -171,9 +173,10 @@ commento = false
   dev-to = ""
   gitea = ""
   google-scholar = ""
+  # it幫="https://ithelp.ithome.com.tw/users/20117516/articles"
 
 [donationOptions]
-  enable = false
+  enable = true
   alipay = "" 
   wechat = ""
   paypal = ""

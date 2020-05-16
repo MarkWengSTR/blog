@@ -6,10 +6,10 @@ header:
     paddingY: 0
     align: center
     title:
-      - HUGO
+      - EM programmer space
     subtitle:
-      - The world’s fastest framework for building websites
-    titleColor: 
+      - Electric Machine design, program, web development
+    titleColor:
     titleShadow: true
     titleFontSize: 44
     subtitleColor: 
