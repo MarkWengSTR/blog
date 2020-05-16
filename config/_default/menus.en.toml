@@ -4,17 +4,17 @@
   url = "about"
   weight = 1
 
-[[main]]
-  identifier = "archive"
-  name = "Archive"
-  url = "archive"
-  weight = 2
+# [[main]]
+#   identifier = "archive"
+#   name = "Archive"
+#   url = "archive"
+#   weight = 2
 
-[[main]]
-  identifier = "categories"
-  name = "Categories"
-  url = "categories"
-  weight = 3
+# [[main]]
+#   identifier = "categories"
+#   name = "Categories"
+#   url = "categories"
+#   weight = 3
 # [[main]]
 #   identifier = "presentation"
 #   name = "Pt"
