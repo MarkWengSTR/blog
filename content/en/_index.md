@@ -6,9 +6,9 @@ header:
     paddingY: 0
     align: center
     title:
-      - EM programmer space
+      - EM programmer & Music
     subtitle:
-      - Electric Machine design, program, web development
+      - Electric Machine design, program, web development, Jazz
     titleColor:
     titleShadow: true
     titleFontSize: 44

@@ -1,27 +1,22 @@
 +++
-title = "About"
-description = "Hugo, the world’s fastest framework for building websites"
+title = "關於我"
+description = "My Stories to be continue..."
 type = "about"
-date = "2019-02-28"
+date = "2020-05-16"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+## 經歷
+* 電機設計、磁路分析 -- from 2012
+* web developer -- from 2018
+* Bassist -- from 2005
 
-Hugo makes use of a variety of open source projects including:
+## 擅長工具
+* 磁路分析軟體: Ansys maxwell, FEMM(學習中)
+* Programming language: ruby, python, clojure(學習中)
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+## 喜好曲風
+* Jazz, Funk, Gospel ...
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
 
 
 
