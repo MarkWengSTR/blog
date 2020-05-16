@@ -9,7 +9,7 @@ hasCJKLanguage = false
 summaryLength = 70
 buildFuture = true
 
-copyright = "&copy;{year}, All Rights Reserved"
+copyright = "© Copyright {year} MarkWengSTR ※本站採用[CC授權](https://creativecommons.org/licenses/by-nc-sa/3.0/tw/)歡迎引用與介紹，並註明出處，謝謝"
 timeout = 10000
 enableEmoji = true
 paginate = 10
