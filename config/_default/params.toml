@@ -73,7 +73,7 @@ enableSidebarPostsByOrder = true
 # footer
 showPoweredBy = true
 showFeedLinks = true
-showSocialLinks = true
+showSocialLinks = false
 enableLangChange = false
 enableThemeChange = false
 
