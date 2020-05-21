@@ -1,14 +1,14 @@
-[zh]
-  title = "MarkWengSTR"
-  languageName = "中文"
+[en]
+  title = "MarkWeng"
+  languageName = "English"
   weight = 1
   languagedir = "ltr"
-  contentdir = "content/zh"
+  contentdir = "content/en"
 
-[en]
-  title = "MarkWengSTR"
-  languageName = "English"
+[zh]
+  title = "MarkWeng"
+  languageName = "中文"
   weight = 2
   languagedir = "ltr"
-  contentdir = "content/en"
+  contentdir = "content/zh"
 

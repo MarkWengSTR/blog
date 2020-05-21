@@ -1,4 +1,4 @@
-logoText = "MarkWengSTR"
+logoText = "MarkWeng"
 logoType = "short" # long, short
 logo = true
 description = "Electric Machine designer & programmer, web developer"
@@ -10,7 +10,7 @@ themecolor = ""
 
 # themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
 themeOptions = ["kimbie", "dark", "light"]
-notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
+notAllowedTypesInHome = ["contact", "archive", "talks", "about", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery"]
@@ -23,7 +23,7 @@ hideSingleContentsWhenJSDisabled = false
 homeHeaderType = "text" # text, img, slide
 
 # menu
-showMobileMenuTerms = ["tags", "categories", "series"]
+showMobileMenuTerms = ["tags"]
 
 # body
 enableBreadcrumb = true
@@ -55,9 +55,9 @@ link = ""
 enableBio = true
 enableBioImage = true
 enableSidebar = true
-enableSidebarTags = true
-enableSidebarSeries = true
-enableSidebarCategories = true
+enableSidebarTags = false
+enableSidebarSeries = false
+enableSidebarCategories = false
 enableHomeSidebarTitles = true
 enableListSidebarTitles = true
 enableToc = true
@@ -65,17 +65,17 @@ hideToc = false
 tocFolding = true
 tocPosition = "inner" # inner, outer
 enableTocSwitch = true
-itemsPerCategory = 5
+itemsPerCategory = 0
 sidebarPosition = "right"
 tocLevels = ["h2", "h3", "h4"]
-enableSidebarPostsByOrder = false
+enableSidebarPostsByOrder = true
 
 # footer
 showPoweredBy = true
 showFeedLinks = true
-showSocialLinks = false
+showSocialLinks = true
 enableLangChange = false
-enableThemeChange = true
+enableThemeChange = false
 
 # service
 googleTagManager = "" # GTM-XXXXXX
@@ -176,18 +176,18 @@ commento = false
   # it幫="https://ithelp.ithome.com.tw/users/20117516/articles"
 
 [donationOptions]
-  enable = true
+  enable = ""
   alipay = "" 
   wechat = ""
   paypal = ""
   patreon = ""
 
 # possible share name: ["facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line"]
-[[share]]
-  name = "facebook"
-  username = ""
-[[share]]
-  name = "twitter"
+# [[share]]
+#   name = ""
+#   username = ""
+# [[share]]
+#   name = ""
 
 [[footerLinks]]
   name = ""
