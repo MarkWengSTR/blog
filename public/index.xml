@@ -45,11 +45,11 @@
       
       <item>
         <title>用Hugo建立blog</title>
-        <link>https://markwengstr.github.io/posts/markdown-syntax/</link>
+        <link>https://markwengstr.github.io/posts/hugo-setup/</link>
         <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
         <author>bskin0330@gmail.com (Mark Weng)</author>
         <atom:modified>Thu, 21 May 2020 00:00:00 +0000</atom:modified>
-        <guid>https://markwengstr.github.io/posts/markdown-syntax/</guid>
+        <guid>https://markwengstr.github.io/posts/hugo-setup/</guid>
         <description></description>
         
         <dc:creator>Mark</dc:creator>

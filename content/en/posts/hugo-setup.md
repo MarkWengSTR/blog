@@ -15,7 +15,9 @@ image:
 
 <!--more-->
 
-## WSL(Windows Subsystem for Linux) ubuntu 18.4 如何安裝 hugo
+## WSL(Windows Subsystem for Linux) ubuntu 18.04 如何安裝 hugo
+#### Code block with backticks
+
 ## 選擇theme並開啟hugo
 ## deploy on github
 ## 換成自己的url
