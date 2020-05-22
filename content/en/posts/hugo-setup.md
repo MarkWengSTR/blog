@@ -28,7 +28,7 @@ sudo apt-get upgrade -y
 wget https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_0.70.0_Linux-64bit.deb
 wget https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_extended_0.70.0_Linux-64bit.deb
 ```
-去hugo的github上找最新的release版本來下載，hugo 與 extend 都裝一下比較好
+去hugo的github上找最新的release版本來下載，hugo 與 extend 都裝一下比較好，因為有些theme會用到sass/scss，像我用的zzo就會用
 https://github.com/gohugoio/hugo/releases 像我這個時期最新的版本是0.70.0,
 不推薦用apt裝是因為，apt的hugo版本不是最新的。
 
@@ -63,7 +63,7 @@ git init
 git clone https://github.com/zzossig/hugo-theme-zzo.git themes/zzo
 hugo server
 ```
-就看theme的頁面裡面怎麼做摟
+就看theme的頁面裡面怎麼做，照做就是了，我的網頁最下方有zzo的網站連結可參考
 
 ## deploy on github
 * 申請帳號
