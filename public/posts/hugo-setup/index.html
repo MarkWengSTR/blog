@@ -1203,7 +1203,7 @@
 
 
     
-<meta name="description" content="從無到有利用hugo建立部落格 &#43; delpoy github &#43; 換成自己的url" />
+<meta name="description" content="從無到有利用hugo建立部落格 &#43; delpoy github static page" />
 
 
 <meta name="keywords" content="hugo,blog">
@@ -1220,7 +1220,7 @@
 <meta property="og:title" content="用Hugo建立blog">
 <meta property="og:url" content="https://markwengstr.github.io/posts/hugo-setup/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="從無到有利用hugo建立部落格 &#43; delpoy github &#43; 換成自己的url">
+<meta property="og:description" content="從無到有利用hugo建立部落格 &#43; delpoy github static page">
 
 <meta name="generator" content="Hugo 0.70.0" />
 <meta name="msapplication-TileColor" content="#fff">
@@ -1249,7 +1249,7 @@
     "datePublished": "2020-05-21T00:00:00Z",
     "dateModified": "2020-05-21T00:00:00Z",
     "url" : "https://markwengstr.github.io/posts/hugo-setup/",
-    "description": "從無到有利用hugo建立部落格 + delpoy github + 換成自己的url",
+    "description": "從無到有利用hugo建立部落格 + delpoy github static page",
     "keywords": ["hugo","blog"],
     "author": {
       "@type": "Person",
@@ -1478,24 +1478,166 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#code-block-with-backticks">Code block with backticks</a></li>
+            <li><a href="#先將apt升級">先將apt升級</a></li>
+            <li><a href="#下載指令">下載指令</a></li>
+            <li><a href="#安裝指令">安裝指令</a></li>
+            <li><a href="#新增hugo專案指令">新增hugo專案指令</a></li>
           </ul>
         </li>
       </ul>
     </li>
     <li><a href="#選擇theme並開啟hugo">選擇theme並開啟hugo</a></li>
     <li><a href="#deploy-on-github">deploy on github</a></li>
-    <li><a href="#換成自己的url">換成自己的url</a></li>
   </ul>
 </nav>
   </div>
 </div>
 
       <h2 id="wslwindows-subsystem-for-linux-ubuntu-1804-如何安裝-hugo">WSL(Windows Subsystem for Linux) ubuntu 18.04 如何安裝 hugo</h2>
-<h4 id="code-block-with-backticks">Code block with backticks</h4>
+<h4 id="先將apt升級">先將apt升級</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get update -y
+sudo apt-get upgrade -y
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="下載指令">下載指令</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_0.70.0_Linux-64bit.deb
+wget https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_extended_0.70.0_Linux-64bit.deb
+</code></pre></td></tr></table>
+</div>
+</div><p>去hugo的github上找最新的release版本來下載，hugo 與 extend 都裝一下比較好<br />
+<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 像我這個時期最新的版本是0.70.0,<br />
+不推薦用apt裝是因為，apt的hugo版本不是最新的。</p>
+<h4 id="安裝指令">安裝指令</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo dpkg -i hugo_0.70.0_Linux-64bit.deb
+sudo dpkg -i hugo_extended_0.70.0_Linux-64bit.deb
+</code></pre></td></tr></table>
+</div>
+</div><p>可以先用 <code>hugo version</code> 來看一下有沒有安裝成功</p>
+<h4 id="新增hugo專案指令">新增hugo專案指令</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site xxxx
+<span class="nb">cd</span> xxxx
+hugo server
+</code></pre></td></tr></table>
+</div>
+</div><p>(xxxx 請改成自己的專案名稱)</p>
+<p>在瀏覽器開啟 localhost:1313 沒有錯誤就是OK摟，空白是正常的</p>
 <h2 id="選擇theme並開啟hugo">選擇theme並開啟hugo</h2>
+<p>去 <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> 選個喜歡的theme吧!<br />
+我個人是選擇 <code>zzo</code>，因為很漂亮而且功能很齊全<br />
+要怎麼把theme裝到剛剛產生的hugo專案上呢，非常簡單</p>
+<p>目前在xxxx目錄裡(以zzo為例)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">&lt;CTRL&gt; + c <span class="o">(</span>先關掉server<span class="o">)</span>
+git init
+git clone https://github.com/zzossig/hugo-theme-zzo.git themes/zzo
+hugo server
+</code></pre></td></tr></table>
+</div>
+</div><p>就看theme的頁面裡面怎麼做摟</p>
 <h2 id="deploy-on-github">deploy on github</h2>
-<h2 id="換成自己的url">換成自己的url</h2>
+<ul>
+<li>
+<p>申請帳號<br />
+首先當然要申請github帳號拉</p>
+</li>
+<li>
+<p>開兩個repositories<br />
+一個放整個hugo專案，一個用來deploy上線<br />
+放專案的名稱應該就是xxxx拉，而delpoy的要叫做 <code>xxxx.github.io</code></p>
+</li>
+<li>
+<p>利用以下指令來完成delpoy, 最好是寫成一個shell script以後run它就好</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">  <span class="c1">#!/bin/sh</span>
+
+  <span class="c1"># If a command fails then the deploy stops</span>
+  <span class="nb">set</span> -e
+
+  <span class="nb">printf</span> <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
+
+  <span class="c1"># Build the project.</span>
+  hugo <span class="c1"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+
+  <span class="c1"># Go To Public folder</span>
+  <span class="nb">cd</span> public
+
+  <span class="c1"># Add changes to git.</span>
+  git add .
+
+  <span class="c1"># Commit changes.</span>
+  <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&#34;</span>
+  <span class="k">if</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$*</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$*</span><span class="s2">&#34;</span>
+  <span class="k">fi</span>
+  git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
+
+  <span class="c1"># Push source and build repos.</span>
+  git push origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>用 <code>www.xxxx.github.io</code> 就可以看到啦!!!</p>
     </article>
     
     <script>
@@ -2030,14 +2172,16 @@ document.addEventListener('DOMContentLoaded', function () {
       <ul>
         <li>
           <ul>
-            <li><a href="#code-block-with-backticks">Code block with backticks</a></li>
+            <li><a href="#先將apt升級">先將apt升級</a></li>
+            <li><a href="#下載指令">下載指令</a></li>
+            <li><a href="#安裝指令">安裝指令</a></li>
+            <li><a href="#新增hugo專案指令">新增hugo專案指令</a></li>
           </ul>
         </li>
       </ul>
     </li>
     <li><a href="#選擇theme並開啟hugo">選擇theme並開啟hugo</a></li>
     <li><a href="#deploy-on-github">deploy on github</a></li>
-    <li><a href="#換成自己的url">換成自己的url</a></li>
   </ul>
 </nav>
   </div>
