@@ -8,9 +8,9 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 rm -rf public/
 
 # Build the project.
-hugo --gc # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo -t zzo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
-cp -r public ../public
+cp -r public ../
 
 # Go To Public folder
 cd ../public
