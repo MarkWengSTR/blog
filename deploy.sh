@@ -5,11 +5,15 @@ set -e
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
+rm -rf public/
+
 # Build the project.
-hugo -gc # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo --gc # if using a theme, replace with `hugo -t <YOURTHEME>`
+
+cp -r public ../public
 
 # Go To Public folder
-cd public
+cd ../public
 
 # Add changes to git.
 git add .
@@ -23,3 +27,5 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
+
+
