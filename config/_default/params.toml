@@ -92,7 +92,7 @@ fullContents = false
 
 # comment
 enableComment = true
-disqus_shortname = ""
+disqus_shortname = "https-mark-weng-com-1"
 commento = false
 
 [telegram]
