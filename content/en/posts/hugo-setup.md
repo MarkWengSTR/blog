@@ -1,6 +1,11 @@
 ---
 title: 用Hugo建立blog
 date: 2020-05-21
+keyword:
+- hugo
+- blog
+- GitHub
+- static site
 description: 從無到有利用hugo建立部落格 + delpoy github static page
 draft: false
 hideToc: false
@@ -84,7 +89,7 @@ hugo server
   vi .gitignore # 產生.gitignore
 
   # 按小寫英文a可以編輯，填入 public/，:wq 存取&退出
-  目的是不想讓產生的public使這個專案一直肥大
+ # 目的是不想讓產生的public使這個專案一直肥大
 
   git push origin master
   # 首次推的話會需要名稱、email以及帳號密碼(每次都需要，除非額外設定，這邊不講)
