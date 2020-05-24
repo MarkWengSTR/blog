@@ -79,7 +79,7 @@ hugo server
 
 * 第一次要做的步驟： (以下為一系列commemd)
 
-``` shell
+``` bash
   # 目前在專案的目錄裡。
   # 參考github push的步驟
   git init
@@ -89,7 +89,7 @@ hugo server
   vi .gitignore # 產生.gitignore
 
   # 按小寫英文a可以編輯，填入 public/，:wq 存取&退出
- # 目的是不想讓產生的public使這個專案一直肥大
+  # 目的是不想讓產生的public使這個專案一直肥大
 
   git push origin master
   # 首次推的話會需要名稱、email以及帳號密碼(每次都需要，除非額外設定，這邊不講)
