@@ -48,7 +48,7 @@ oAnsoftApp = client.Dispatch("Ansoft.ElectronicDesktop")
 
   - 可以在powershell打上 `Get-ChildItem HKLM:\Software\Classes -ErrorAction SilentlyContinue | Where-Object {$_.PSChildName -match '^\w+\.\w+$' -and (Test-Path -Path "$($_.PSPath)\CLSID")} | Select-Object -ExpandProperty PSChildName`  找看看有沒有，如果太多的話可以在最後面加上 `| grep An`  來縮減結果。
 
-- 為什麼使用 `oAnsoftApp` 這個Object name?  
+- 為什麼使用 `oAnsoftApp` 這個Object name?
 
   因為這是官方的手冊裡控制軟體的API名稱，依照手冊裡的變數，之後繼續實作其他功能時對照會比較方便。
 
