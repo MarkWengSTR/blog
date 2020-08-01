@@ -52,3 +52,9 @@ googleAnalytics = "UA-167402051-1"
   category = "categories"
   tag = "tags"
   series = "series"
+
+[related]
+  [[related.indices]]
+  name = "tags" # 以tags作為相關
+  weight = 1.0
+  includeNewer = true
