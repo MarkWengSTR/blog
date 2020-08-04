@@ -1,16 +1,20 @@
 ---
-title: 馬達、電機 電磁分析自動化 (ansoft maxwell) - (1) 開啟ansys軟體、新增project
+title: PM motor 設計 & 分析自動化 (透過 ansys maxwell) - 開啟ansys軟體、新增project
 date: 2020-08-01
 keyword:
-- ansys_auto_analysis
-description: 由 python script 自動開啟Ansys ElectronicDesktop軟體 、新增project
+- auto_motor_design
+- auto_EM_analysis
+- python_ansys_script
+description: 由 python script 自動開啟Ansys maxwell軟體、新增project
 draft: false
 hideToc: false
 enableToc: true
 enableTocContent: true
 author: Mark
 tags:
-- ansys_auto_analysis
+- auto_motor_design
+- auto_EM_analysis
+- python_ansys_script
 image:
 ---
 
