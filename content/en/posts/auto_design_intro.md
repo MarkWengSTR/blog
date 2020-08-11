@@ -11,6 +11,7 @@ enableTocContent: true
 author: Mark
 tags:
 - auto_motor_design
+- python_ansys_script
 image:
 ---
 

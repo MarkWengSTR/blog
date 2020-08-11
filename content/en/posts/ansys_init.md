@@ -13,7 +13,6 @@ enableTocContent: true
 author: Mark
 tags:
 - auto_motor_design
-- auto_EM_analysis
 - python_ansys_script
 image:
 ---
