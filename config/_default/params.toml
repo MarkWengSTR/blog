@@ -9,7 +9,7 @@ meta_image = ""
 themecolor = ""
 
 # themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
-themeOptions = ["kimbie", "dark", "light"]
+themeOptions = ["light"]
 notAllowedTypesInHome = ["contact", "archive", "talks", "about", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presentation", "resume"]
@@ -34,7 +34,7 @@ enableGoToTop = true
 enableWhoami = true
 summaryShape = "classic" # card, classic, compact
 searchResultPosition = "side" # side, main
-archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
+archiveGroupByDate = "2006-01" # "2006-01": group by month, "2006": group by year
 archivePaginate = 10
 paginateWindow = 1
 talksPaginate = 5
