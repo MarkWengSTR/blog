@@ -38,7 +38,7 @@ image:
 ```python
 from win32com import client
 
-oAnsoftApp = client.Dispatch("Ansoft.ElectronicDesktop")
+oAnsoftApp = client.Dispatch("Ansoft.ElectronicsDesktop")
 ```
 
 看到上面的code，可能會有幾個問題
