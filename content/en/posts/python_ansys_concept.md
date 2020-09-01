@@ -17,11 +17,11 @@ tags:
 ## Why use program to design motor
 
 - Save labor cost - program具有自動化的好處，重複的步驟只要編寫一次，之後只需要執行程式就好
-- Code represent design concept and step - 不管在公司或學校，很常會遇到，某人離開之後，只留下模擬檔，設計的概念與步驟沒有留下，這讓接手的人非常困擾，接手的人可能會不知道某個已設定好的東西是如何設定的，為什麼要這樣設定 ?  而當設計自動化之後，也就代表所有的概念與步驟都會留下，也不會因為原本的人員離開而讓專案有遭遇困難的風險。  當然，這也依賴著一個好的coding style與系統設計。
+- Code represent design concept and step - 當設計變成code，並且利用的是好理解且通用的 code structure ，人員轉換造成的工作問題就會下降，因為所有人只要能看懂code，就能看懂設計步驟，進而理解設計。
 
 ## How to represent motor design concept and step
 
-專注在兩個非常重要卻又簡單的東西 **data and function**
+專注在兩個非常重要卻又簡單的東西 **data & function**
 
 ### Input & Output Data
 
@@ -32,9 +32,9 @@ tags:
 
 ### Design function and data
 
-1. 手算一次將規格data轉換成馬達模型data與電氣data
-2. 將中間所有的**步驟**，以及當中用到的**數據名稱**記錄下來
-3. 將**數據名稱**根據**步驟**的概念分類 (定轉子、磁石、電氣...等)。使用dict將其收起來，還不知道的參數就先給 `None`，用專案中馬達設計的部分呈現如下
+1. 手算一次將 規格 轉換成 **馬達模型數據** 與 **電氣數據**。
+2. 將中間所有的 **步驟**，以及當中用到的 **數據名稱** 記錄下來。
+3. 將 **數據名稱** 根據 **步驟** 的概念分類 (定轉子、磁石、電氣...等)。使用 `dict 這個 data structure`將其收起來，還不知道的值就先給 `None`，用專案中馬達設計的部分呈現如下。
 
 ```python
 motor_cal_params = {
@@ -152,9 +152,9 @@ ktke_calculation(total_cal_params) and \
 
 ## 結論
 
-使用上述的方法，是不是很單純，且很直觀就能看懂設計的過程，debug也非常容易，直接在run的時候將data print出來看就好。
+使用上述的方法，是不是很單純，且很直觀就能看懂設計的過程，debug也非常容易，執行程式時將`total_cal_params` 印出來看就好。
 
-當整個程式設計完成後，接下來就是去優化每一個function & data讓它們更容易被看懂，更能直觀的對應馬達設計。
+當整個程式設計完成後，接下來就是去優化每一個 function & data 讓它們更容易被看懂，更能直觀的對應馬達設計。
 
 更詳細可參考[我的設計](https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online/blob/master/run.py)，未來還會持續的優化設計。
 
