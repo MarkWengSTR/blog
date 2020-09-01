@@ -1,5 +1,5 @@
 ---
-title: 分析自動化 (透過 ansys maxwell) - python fundamental concept
+title: 分析自動化 (透過 ansys maxwell) - python fundamental concept 基礎概念
 date: 2020-08-31
 keyword:
 - python_fundamental
@@ -69,5 +69,5 @@ tags:
 
 ## 結論
 
-上述所有關於python的語法非常的簡單，而且其實不單只適用於python，這些方法是所有語言都有的，也就是學會了接下來談到的設計方法後，無論轉去哪個語言，都是可以使用的，下一篇文章會先利用此篇文章的基礎，先講解整個設計方法的概念。
+上述所有關於python的語法非常的簡單，而且其實不單只適用於python，這些方法是所有語言都有的，也就是學會了接下來談到的設計方法後，無論轉去哪個語言，都是可以使用的，下一篇文章會利用此篇文章的基礎，先講解整個設計方法的概念。
 
