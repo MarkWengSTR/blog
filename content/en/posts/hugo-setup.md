@@ -14,7 +14,6 @@ enableTocContent: true
 author: Mark
 tags:
 - hugo
-- blog
 image: 
 ---
 
