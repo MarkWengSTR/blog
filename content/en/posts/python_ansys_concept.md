@@ -1,5 +1,5 @@
 ---
-title: 分析自動化 (透過 ansys maxwell) - python motor design concept
+title: motor design programming & 分析自動化 (透過 ansys maxwell) - python motor design concept
 date: 2020-09-01
 keyword:
 - python_fundamental
@@ -11,7 +11,7 @@ enableToc: true
 enableTocContent: true
 author: Mark
 tags:
-- python_ansys_script
+- motor_design_programming
 ---
 
 ## Why use program to design motor

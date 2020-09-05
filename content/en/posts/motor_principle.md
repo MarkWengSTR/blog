@@ -1,5 +1,5 @@
 ---
-title: permanent-magnet synchronous motor 設計 & 分析自動化 (透過 ansys maxwell) - 淺談永磁馬達設計原理
+title: motor design programming & 分析自動化 (透過 ansys maxwell) - 淺談永磁馬達設計原理
 date: 2020-08-01
 keyword:
 - auto_motor_design

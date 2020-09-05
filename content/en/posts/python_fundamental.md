@@ -1,5 +1,5 @@
 ---
-title: 分析自動化 (透過 ansys maxwell) - python fundamental concept 基礎概念
+title: motor design programming & 分析自動化 (透過 ansys maxwell) - python fundamental concept 基礎概念
 date: 2020-08-31
 keyword:
 - python_fundamental
@@ -11,7 +11,7 @@ enableToc: true
 enableTocContent: true
 author: Mark
 tags:
-- python_ansys_script
+- motor_design_programming
 - python
 ---
 

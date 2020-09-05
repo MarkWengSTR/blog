@@ -1,5 +1,5 @@
 ---
-title: permanent-magnet synchronous motor 設計 & 分析自動化 (透過 ansys maxwell) - 開啟ansys軟體、新增project
+title: motor design programming & 分析自動化 (透過 ansys maxwell) - 開啟ansys軟體、新增project
 date: 2020-08-01
 keyword:
 - auto_motor_design
@@ -13,7 +13,7 @@ enableTocContent: true
 author: Mark
 tags:
 - auto_motor_design
-- python_ansys_script
+- motor_design_programming
 image:
 ---
 
