@@ -1,5 +1,5 @@
 ---
-title: motor design programming & 分析自動化 (透過 ansys maxwell) - python motor design concept
+title: motor design programming & 分析自動化 (透過 ansys maxwell) - motor design programming concept in python
 date: 2020-09-01
 keyword:
 - python_fundamental
