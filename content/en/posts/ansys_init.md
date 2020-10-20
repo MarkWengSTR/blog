@@ -1,5 +1,5 @@
 ---
-title: motor design programming & 分析自動化 (透過 ansys maxwell) - 開啟ansys軟體、新增project
+title: python開啟ansys軟體、新增project
 date: 2020-08-01
 keyword:
 - auto_motor_design
@@ -12,7 +12,6 @@ enableToc: true
 enableTocContent: true
 author: Mark
 tags:
-- auto_motor_design
 - motor_design_programming
 image:
 ---

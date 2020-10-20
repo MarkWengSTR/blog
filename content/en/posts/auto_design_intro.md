@@ -1,5 +1,5 @@
 ---
-title: motor design programming & 分析自動化 (透過 ansys maxwell) - python script 自動化設計 demo
+title: python script for ansys maxwell 自動化設計 demo
 date: 2020-08-10
 keyword:
 - auto_motor_design
@@ -10,7 +10,6 @@ enableToc: true
 enableTocContent: true
 author: Mark
 tags:
-- auto_motor_design
 - motor_design_programming
 image:
 ---

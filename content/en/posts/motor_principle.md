@@ -1,5 +1,5 @@
 ---
-title: motor design programming & 分析自動化 (透過 ansys maxwell) - 淺談永磁馬達設計原理
+title: 淺談永磁馬達設計原理
 date: 2020-08-01
 keyword:
 - auto_motor_design
@@ -10,7 +10,7 @@ enableToc: true
 enableTocContent: true
 author: Mark
 tags:
-- auto_motor_design
+- motor_design_programming
 image:
 math: true
 ---

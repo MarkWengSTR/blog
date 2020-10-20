@@ -1,5 +1,5 @@
 ---
-title: motor design programming & 分析自動化 (透過 ansys maxwell) - python fundamental concept 基礎概念
+title: python fundamental concept 基礎概念
 date: 2020-08-31
 keyword:
 - python_fundamental
@@ -56,8 +56,8 @@ tags:
 
 ## Means of abstraction (如何抽象) in python
 
-- 利用assignment指定data成為 `某個名稱的變數`
-- 將 將combination組合data且放入 `某個名稱的function` 
+- 利用assignment指定data成為 `特定名稱的 "變數"`
+- 將combination組合data且放入 `特定名稱的 "function"` 
 
 ## why no class / object
 

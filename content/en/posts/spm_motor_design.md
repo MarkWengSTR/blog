@@ -1,5 +1,5 @@
 ---
-title: motor design programming & 分析自動化 (透過 ansys maxwell) - SPM motor design by python script
+title: SPM motor design by python script
 date: 2020-10-07
 keyword:
 - python
