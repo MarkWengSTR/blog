@@ -72,3 +72,9 @@ com_error: (-2147221164, '類別未登錄', none, none)
 
 
 
+## Ansys 2021R1 找不到win32com (2021/1/30 update)
+
+據同為 motor design programming的朋友來信，據說Ansys 2021R1的版本用regserver會抓不到win32com，解決方法是要安裝更新版的pywin32 https://github.com/mhammond/pywin32/releases 
+
+歡迎來信一起討論優~!
+
