@@ -1,6 +1,6 @@
 ---
 title: Serious-Python note - 1. start your project
-date: 2021-02-16
+date: 2021-02-17
 keyword:
 - python
 description: Serious-Python 讀書筆記(1)
