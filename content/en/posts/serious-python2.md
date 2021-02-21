@@ -4,7 +4,7 @@ date: 2021-02-18
 keyword:
 - python
 description: Serious-Python 讀書筆記(2)
-draft: True
+draft: false
 hideToc: false
 enableToc: true
 enableTocContent: true
