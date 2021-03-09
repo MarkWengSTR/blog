@@ -20,7 +20,7 @@ tags:
 
 ### Some Simple Tests
 - 把test放在submodule中
-- 讓test中的階層模仿主要module的階層，可以更好的維護tests。 (如 *mylib/foobar.py* 的test就會放在 * mylib/tests/test_foobar.py.*中)
+- 讓test中的階層模仿主要module的階層，可以更好的維護tests。 (如 *mylib/foobar.py* 的test就會放在 *mylib/tests/test_foobar.py*. 中)
 - 最簡單的test就像下面的function，單純執行 `test_true()`就好。
 
 ```python
@@ -29,7 +29,7 @@ def test_true():
     
 test_true()
 ```
-- 當然如果這樣一個一個執行test會非常的痛苦，可以使用 *pytest*這個module (需要pip install) ，它會幫你執行所有以 `test_` 開頭的function。 `pytest -v test_true.py` ，全部通過的話就會顯示 PASSED，有沒˙通過的話，就會把沒通過的部分顯示出來。
+- 當然如果這樣一個一個執行test會非常的痛苦，可以使用 *pytest*這個module (需要pip install) ，它會幫你執行所有以 `test_` 開頭的function。 `pytest -v test_true.py` ，全部通過的話就會顯示 PASSED，沒有通過的話，就會把沒通過的部分顯示出來。
 - pytest好用的關鍵是，當test越來越複雜時，它顯示出來的資訊可以幫助我們很好理解test fail的原因。
 
 ### Skipping Tests
@@ -39,7 +39,7 @@ test_true()
   - 也可以用 **skip_if**，判斷某種情況下才需要跑此test function，`@pytest.mark.skipif(<condition>, reason="if condition then skip this test")`
 
 ### Running Particular Tests
-- pytest 在CLI中，可以接收檔案或是資料夾當作參數，若接收資料夾的話會對跑資料夾內所有符合 *test_*.py* 的檔案跑Test。
+- pytest 在CLI中，可以接收檔案或是資料夾當作參數，若接收資料夾的話會對跑資料夾內所有符合 test_*.py 的檔案跑Test。
 - 若是在檔案後面再放 `-k function` ，就可以限制只跑哪一個test function。 
 - 也可以幫 test 限定某些name scope，在function上用 `@pytest.mark.<scope name>`，在CLI上給定參數 `-m <scope name>` ，就會只跑給定name的test。
 - `-m` 後面是可以接各種operator的(and, or, not)。 ex: 加上 `"not <scope name>"` 也可以跑不是scope name的test。
@@ -111,81 +111,73 @@ def test_insert(database):
 - 基礎的使用方法
 
 ```python
-In [2]: from unittest import mock
+from unittest import mock
 
-In [3]: m = mock.Mock()
+m = mock.Mock()
+m.some_attribute = "hello"
 
-In [4]: m.some_attribute = "hello"
-
-In [5]: m.some_attribute
-Out[5]: 'hello'
+m.some_attribute #'hello'
 ```
 
 - 也可以動態的創造method，例如創造一個假的method，永遠都return 42，無論給定什麼參數。
 
 ```
->>> from unittest import mock
->>> m = mock.Mock()
->>> m.method.return_value = 42
->>> m.method()
-42
->>> m.method("with", "arguments")
-42
+from unittest import mock
+m = mock.Mock()
+m.method.return_value = 42
+
+m.method() # 42
+m.method("with", "arguments") # 42
 ```
 - 也可以在method被呼叫的同時放入side_effect
 
 ```python
-In [8]: def print_hello():
-   ...:     print("hello world")
-   ...:     return 43
-   ...:
+def print_hello():
+    print("hello world")
+    return 43
 
-In [9]: m.method.side_effect = print_hello
+m.method.side_effect = print_hello
 
-In [10]: m.method()
-hello world
-Out[10]: 43
+m.method() # hello world 
+           # 43
 ```
 - 那也可以計算method到底被call幾次
 
 ```python
-In [11]: m.method.call_count
-Out[11]: 2
+m.method.call_count # 2
 ```
 - 如果從mock創造一個接收參數的method，且想確認mock method的參數，可用 ` assert_called_once_with()` ，參數不知道要代什麼的話可以用 `mock.ANY`。
 
 ```python
->>> from unittest import mock
->>> m = mock.Mock()
->>> m.some_method('foo', 'bar')
-<Mock name='mock.some_method()' id='26144272'>
->>> m.some_method.assert_called_once_with('foo', 'bar')
->>> m.some_method.assert_called_once_with('foo', mock.ANY)
->>> m.some_method.assert_called_once_with('foo', 'baz')
-Traceback (most recent call last):
- File "<stdin>", line 1, in <module>
- File "/usr/lib/python2.7/dist-packages/mock.py", line 846, in assert_called_
-once_with
- return self.assert_called_with(*args, **kwargs)
- File "/usr/lib/python2.7/dist-packages/mock.py", line 835, in assert_called_
-with
- raise AssertionError(msg)
-AssertionError: Expected call: some_method('foo', 'baz')
-Actual call: some_method('foo', 'bar')
+from unittest import mock
+
+m = mock.Mock()
+m.some_method('foo', 'bar') # <Mock name='mock.some_method()' id='26144272'>
+m.some_method.assert_called_once_with('foo', 'bar')
+m.some_method.assert_called_once_with('foo', mock.ANY)
+m.some_method.assert_called_once_with('foo', 'baz')
+# Traceback (most recent call last):
+# File "<stdin>", line 1, in <module>
+# File "/usr/lib/python2.7/dist-packages/mock.py", line 846, in assert_called_once_with
+# return self.assert_called_with(*args, **kwargs)
+# File "/usr/lib/python2.7/dist-packages/mock.py", line 835, in assert_called_with
+# raise AssertionError(msg)
+# AssertionError: Expected call: some_method('foo', 'baz')
+# Actual call: some_method('foo', 'bar')
 
 ```
 
 - mock這個東西到底怎麼用在test裡面呢，就是拿來代替某個function被call的時後的回傳值，以下就示範一個最基本的方式
 
 ```python
-In [35]: def fake_os_unlink(path):
-    ...:     print("fake fake")
-    ...:
+def fake_os_unlink(path):
+    print("fake fake")
 
-In [36]: with mock.patch('os.unlink', fake_os_unlink):
-    ...:     os.unlink("C:/")
-    ...:
-fake fake
+
+with mock.patch('os.unlink', fake_os_unlink):
+    os.unlink("C:/")
+
+# >> fake fake
 ```
 
 - 也可以用裝飾器 `@mock.patch('<function>', <mock_function>)` 放在測試的function上來mock某個東西，非常的簡潔明瞭
