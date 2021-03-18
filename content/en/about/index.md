@@ -10,9 +10,9 @@ date = "2020-05-16"
 * web developer -- from 2018
 * Bassist -- from 2005
 
-## 擅長工具
-* 磁路分析軟體: Ansys maxwell, FEMM(學習中)
-* Programming language: ruby, python, clojure(學習中)
+## 工具
+* 磁路分析軟體: Ansys maxwell, FEMM
+* Programming language: ruby, python, clojure, rust
 
 ## 喜好曲風
 * Jazz, Funk, Gospel ...
