@@ -3,7 +3,7 @@ title: Serious-Python note - 7. Methods and Decorators
 date: 2021-03-14
 keyword:
 - python
-description: Serious-Python 讀書筆記(7)
+description: Serious-Python 讀書筆記(7) - python 2.2的時候發表了 decorator的使用方式 `classmethod()`與`classmethod()`，後續也繼續support了許多decotators的開發，但仍有很多人不太清楚背後的運作。 這個章節首先探討decorator，接著來討論使用它來產生static, class, method，最後來講一下 `super()`這個function
 draft: false
 hideToc: false
 enableToc: true
@@ -12,8 +12,6 @@ author: Mark
 tags:
 - python
 ---
-
-python 2.2的時候發表了 decorator的使用方式 `classmethod()`與`classmethod()`，後續也繼續support了許多decotators的開發，但仍有很多人不太清楚背後的運作。 這個章節首先探討decorator，接著來討論使用它來產生static, class, method，最後來講一下 `super()`這個function
 
 ## Decorators and When to Use Them
 - Decorator是一個拿別的function來當作引數的function，且替換或調整丟進來的function成為一個新的funciton。

@@ -3,7 +3,7 @@ title: Serious-Python note - 3. Documentation and Good API Practice
 date: 2021-02-24
 keyword:
 - python
-description: Serious-Python 讀書筆記(3)
+description: Serious-Python 讀書筆記(3) - Documentation 是非常重要的一件事，雖然寫doc是一件感覺非常煩雜的事，但其實不需要，python developer有很好的工具來幫助這件事。
 draft: false
 hideToc: false
 enableToc: true
@@ -14,7 +14,6 @@ tags:
 ---
 
 ## Documenting with Sphinx
-- 作者認為 Documentation 是非常重要的一件事，雖然寫doc是一件感覺非常煩雜的事，但其實不需要，python developer有很好的工具來幫助這件事。
 - 大多的contributer都喜歡寫code甚於寫文件，甚至有doc跟project
 是分開的，doc根本趕不上開發的速度。
 - 最常用的python documentation是 *reStructuredText* 與 * reST* ，輕量級的markup 語言(類似 Markdown)，好撰寫也好閱讀，而 **Sphinx**是開發它們最常用的工具。

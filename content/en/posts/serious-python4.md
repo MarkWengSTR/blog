@@ -3,7 +3,7 @@ title: Serious-Python note - 4. Handling Timestamps and Time Zones
 date: 2021-03-01
 keyword:
 - python
-description: Serious-Python 讀書筆記(4)
+description: Serious-Python 讀書筆記(4) - Time zone其實是一個非常複雜的問題，不單單只是UTC +- 12 hours而已呀，這章就來好好探討這個問題。
 draft: false
 hideToc: false
 enableToc: true
@@ -13,8 +13,6 @@ tags:
 - python
 
 ---
-
-Time zone其實是一個非常複雜的問題，不單單只是UTC +- 12 hours而已呀，這章就來好好探討這個問題。
 
 ## The Problem of Missing Time Zones
 - 當timestamp沒有time zone資訊，那就等於沒有用，因為無法得知確切可以比較的時間。

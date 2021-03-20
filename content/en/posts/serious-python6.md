@@ -3,8 +3,8 @@ title: Serious-Python note - 6. Unit Testing
 date: 2021-03-07
 keyword:
 - python
-description: Serious-Python 讀書筆記(6)
-draft: false
+description: Serious-Python 讀書筆記(6) - 寫code如果沒有test的話，基本上是沒有用，因為沒有辦法證明它是有效的。
+draft: false 
 hideToc: false
 enableToc: true
 enableTocContent: true
@@ -12,8 +12,6 @@ author: Mark
 tags:
 - python
 ---
-
-寫code如果沒有test的話，基本上是沒有用，因為沒有辦法證明它是有效的。
 
 ## The Basics of Testing
 在python中寫test與跑test是非常簡單的，並沒有侵入與破壞性，而test會大大的幫助你和其他開發者維護你的專案，接下來就會介紹基本的testing觀念。

@@ -3,7 +3,7 @@ title: Serious-Python note - 8. functional programming
 date: 2021-03-15
 keyword:
 - python
-description: Serious-Python 讀書筆記(8)
+description: Serious-Python 讀書筆記(8) - 來討論一下在python中如何利用functional programming來寫更簡潔有效的code。
 draft: false
 hideToc: false
 enableToc: true
@@ -13,7 +13,7 @@ tags:
 - python
 ---
 
-來討論一下在python中如何利用functional programming來寫更簡潔有效的code。
+
 
 ## Creating Pure Functions
 - 當想把code寫成functional style時，function就要盡量設計成沒有side effect。也就是並不會改變送進去的參數的state，比較一下以下兩個case
