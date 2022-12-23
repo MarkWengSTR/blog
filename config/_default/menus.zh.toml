@@ -10,11 +10,11 @@
   url = "archive"
   weight = 2
 
-[[main]]
-  identifier = "categories"
-  name = "分類"
-  url = "categories/"
-  weight = 3
+# [[main]]
+#   identifier = "categories"
+#   name = "分類"
+#   url = "categories/"
+#   weight = 3
 
 # [[main]]
 #   identifier = "gallery"

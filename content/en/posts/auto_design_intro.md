@@ -1,6 +1,6 @@
 ---
-title: python script for ansys maxwell 自動化設計 demo
-date: 2020-08-10
+title: Python script for ansys maxwell, Surface Permanent Magnet Motor design automation demo
+date: 2020-07-28
 keyword:
 - auto_motor_design
 description: 利用python script 自動化設計 SPM 馬達 並控制ansys maxwell 模擬。
@@ -14,15 +14,15 @@ tags:
 image:
 ---
 
-## 影片介紹
+## 影片介紹 (Vedio Intro)
 
-目前的成果，拍成影片上傳到youtube上
+目前的成果，拍成影片上傳到youtube上 
 
  {{< youtube uStT2k3V6x0>}}
 
 
 
-輸入所需的參數 `spec_params`
+輸入所需的參數 `spec_params` [input the required parameters]
 
 ```python
 spec_params = {
@@ -40,24 +40,24 @@ spec_params = {
 
 稍微解釋一下參數
 
-- stator_OD_limit: 定子外徑限制
-- max_power: 最大功率
-- voltage_dc: DC bus 電壓
-- max_torque_nm: 最大轉矩
-- max_speed_rpm: 最高轉速
-- export_path: 輸出參數 (這是之後串接要用的可以不用管)
-- pj_key: project的名稱(使用不重複的時間戳，以便同時多個模擬一起執行)
-- res_url: 打response回去的url (這是之後串接要用的可以不用管)
+- stator_OD_limit: 定子外徑限制 [Stator outer diameter]
+- max_power: 最大功率 [maximum power]
+- voltage_dc: DC bus 電壓 [DC bus voltage]
+- max_torque_nm: 最大轉矩 [maximum torque]
+- max_speed_rpm: 最高轉速 [maximum speed]
+- export_path: 輸出路徑 (not required)
+- pj_key: project的名稱(使用不重複的時間戳，以便同時多個模擬一起執行) (not required)
+- res_url: 打response回去的url (這是之後串接要用的可以不用管) (not required)
 
-輸入以上參數後，執行 `python run.py` 就會開始 執行設計 -> 跑模擬 -> 數據計算後處理。
+輸入以上參數後，執行 `python run.py` 就會開始 執行設計 -> 跑模擬 -> 數據計算後處理。 [execute `python run.py`, begin to execute design, simulation, post data processing. ]
 
 Github repo: https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online
 
 ## 未來討論項目
 
-接下來針對整個project的內容來講解，會分成幾個部分
+接下來針對整個project的內容來講解，會分成幾個部分 [For the project content description, will break to parts]
 
-- 馬達設計觀念
+- motor design concept
 - python script code design
 - python ansys co-operation
 - build web api

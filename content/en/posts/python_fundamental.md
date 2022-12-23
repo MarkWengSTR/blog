@@ -1,6 +1,6 @@
 ---
 title: python fundamental concept 基礎概念
-date: 2020-08-31
+date: 2020-07-20
 keyword:
 - python_fundamental
 - data_and_function

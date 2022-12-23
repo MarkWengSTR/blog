@@ -1,10 +1,10 @@
 ---
-title: SPM motor design by python script
+title: 程式化永磁馬達設計 by python 真實範例
 date: 2020-10-07
 keyword:
 - python
 - spm_motor_design
-description: Introduce surface permanent motor design by python script。
+description: 由定子外徑限制、最大功率、DC bus電壓、最大轉矩、最高轉速 規格，推導出整個10p12s spm馬達的設計與細部尺寸，並不是一個優化的模型，但都是經由合理的計算與假設，實作出一個合乎規格的初始設計。
 draft: false
 hideToc: false
 enableToc: true
@@ -20,7 +20,7 @@ tags:
 
 ## 設計概覽
 
-規格如下
+規格如下 
 
 ```python
 {
@@ -32,7 +32,7 @@ tags:
 }
 ```
 
-整個 [設計計算](https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online/blob/master/params/ktke_calculation.py) 可以參考連結
+整個 [設計計算](https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online/blob/master/params/ktke_calculation.py) 可以參考連結 
 
 ## 設計流程簡介
 
@@ -91,7 +91,7 @@ ktke的計算說明可以參考  [淺談馬達設計]({{< ref "/posts/motor_prin
 
 由 合理的 **pc 操作點**，由 **磁石寬度比例** 與 **氣隙長度** 計算出 **磁石厚度**。
 
-## 結論
+## 結論 (conclusion)
 
 上述的計算，已經把整顆馬達所需要的參數與細部尺寸都設計完了，馬達設計其實要考量的要素很多，每個設計者也會有自己的一套方法，以上是我自己的方法，確實是可以由計算就展開成一個合理且符合規格的設計，目前僅限10p12s，未來希望可以成為一個General的設計方式，可以設計各種槽極配，且能延伸到IPM或感應馬達。
 

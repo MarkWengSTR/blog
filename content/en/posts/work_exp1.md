@@ -8,7 +8,7 @@ enableToc: true
 enableTocContent: true
 author: Mark
 tags:
-- mindset#
+- mindset
 ---
 
 ## 為什麼會思考這個?
