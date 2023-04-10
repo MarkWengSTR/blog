@@ -16,6 +16,7 @@ paginate = 10
 rssLimit = 100
 
 enableGitInfo = false
+ex_googleAnalytics = "G-7PGL1D4K14"
 googleAnalytics = "UA-167402051-1"
 
 [markup]

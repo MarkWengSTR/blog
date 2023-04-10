@@ -17,7 +17,7 @@ tags:
 
 ## 前言
 
-​	最近也剛好有朋友有個wordpress後台功能擴增的需求，一個小型的商品ERP，由於在wordpress裡面，因此直接使用wordpress當後端API而前端就用Vue，練一下這兩個這幾年非常夯的framework。
+最近也剛好有朋友有個wordpress後台功能擴增的需求，一個小型的商品ERP，由於在wordpress裡面，因此直接使用wordpress當後端API，而前端就用Vue，練一下這兩個這幾年非常夯的framework。
 
 ## Use Vue-cli in Wordpress admin page
 
@@ -27,7 +27,9 @@ tags:
 
 ## Wordpress wp_rest_controller
 
-後端部分因為已經習慣使用model與controller的方式開發，還好wordpress也提供了wp_rest_controller的工具，讓我們可以做好router與controller的部分，然後再把跟db溝通的部分拆出一個repository來，為了讓以後開發能夠有基礎可以參考，我製作了一個簡單的[CURD的branch](https://github.com/MarkWengSTR/wordpress-vue2-starter/tree/study/full-CRUD)，把前端Vue與後端wordpress串起來。
+後端部分因為已經習慣使用model與controller的方式開發，還好wordpress也提供了wp_rest_controller的工具，可以做好router與controller的部分，跟db溝通的部分拆出一個repository來使用。
 
-這個專案也有將常用的vue-boostrap, fontawsone裝到切開的branch供以後的專案使用，歡迎有興趣使用Vue開發wordpress plugin的朋友們一起討論~~。
+為了讓以後開發能夠有基礎可以參考，我製作了一個簡單的[CURD的branch](https://github.com/MarkWengSTR/wordpress-vue2-starter/tree/study/full-CRUD)，把前端Vue與後端wordpress串起來。
+
+這個專案也有將常用的vue-boostrap, font-awsone裝到切開的branch供以後的專案使用，歡迎有興趣使用Vue開發wordpress plugin的朋友們一起討論~~。
 

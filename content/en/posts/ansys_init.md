@@ -1,6 +1,6 @@
 ---
 title: python開啟ansys軟體、新增project
-date: 2020-08-01
+date: 2020-07-25
 keyword:
 - auto_motor_design
 - auto_EM_analysis

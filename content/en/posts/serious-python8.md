@@ -4,7 +4,7 @@ date: 2021-03-15
 keyword:
 - python
 description: Serious-Python 讀書筆記(8) - 來討論一下在python中如何利用functional programming來寫更簡潔有效的code。
-draft: false
+draft: true
 hideToc: false
 enableToc: true
 enableTocContent: true

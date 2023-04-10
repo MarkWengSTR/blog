@@ -1,7 +1,7 @@
 logoText = "MarkWeng"
 logoType = "short" # long, short
 logo = true
-description = "Electric Machine designer & programmer, web developer"
+description = "Electric Machine designer and web developer, use #tags to find more"
 custom_css = []
 custom_js = []
 useFaviconGenerator = false # https://www.favicon-generator.org/
@@ -44,7 +44,7 @@ pubPaginate = 20
 # whoami
 myname = "Mark Weng"
 email = "bskin0330@gmail.com"
-whoami = "Electric Machine designer & programmer, web developer"
+whoami = "Electric Machine designer and web developer, use #tags to find more"
 bioImageUrl = ""
 useGravatar = false
 location = "Taiwan"

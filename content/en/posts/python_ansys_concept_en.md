@@ -1,11 +1,11 @@
 ---
-title: 程式化永磁馬達設計概念 by python
-date: 2020-09-01
+title: Surface Permanent Magnet Motor design programming concept in python
+date: 2020-10-11
 keyword:
 - python_fundamental
 - data_and_function
 description: Introduce how to use python in motor design and why use program to design motor。
-draft: false
+draft: true
 hideToc: false
 enableToc: true
 enableTocContent: true
@@ -16,25 +16,26 @@ tags:
 
 ## Why use program to design motor
 
-- Save labor cost - program 具有自動化的好處，重複的步驟只要編寫一次，之後只需要執行程式就好
-- Code represent design concept and step - 當設計變成code，並且利用的是好理解且通用的 code structure ，人員轉換造成的工作問題就會下降，因為所有人只要能看懂code，就能看懂設計步驟，進而理解設計。 
+- Save labor cost - program has the advantage of automation, repeating steps only need to be written once, and then only need to execute the program
+
+- Code represent design concept and step - When the design becomes code, and a well-understood and universal code structure is used, the work problems caused by personnel switching will be reduced, because as long as everyone can understand the code, they can understand the design steps and then understand the design.
 
 ## How to represent motor design concept and step
 
-專注在兩個非常重要卻又簡單的東西 **data & function**。 
+Just need to focus on two simple but very important stuff **Data & Function**
 
 ### Input & Output Data
 
-先思考 input 與 ouput的data是什麼
+First think about what the data of input and ouput are
 
-- input data - 規格
-- output data - 定子外徑、馬達長度、匝數、BEMP(@1000rpm)、操作點數據(torque data, average torque, speed, torque ripple, current, current density, line voltage, coreloss, copperloss)
+- input data - specifications
+- output data - stator outer diameter, motor length, number of turns, BEMP(@1000rpm), operating point data (torque data, average torque, speed, torque ripple, current, current density, line voltage, coreloss, copperloss)
 
 ### Design function and data
 
-1. 手算一次將 規格 轉換成 **馬達模型數據** 與 **電氣數據**。
-2. 將中間所有的 **步驟**，以及當中用到的 **數據名稱** 記錄下來。
-3. 將 **數據名稱** 根據 **步驟** 的概念分類 (定轉子、磁石、電氣...等)。使用 `dict 這個 data structure`將其收起來，還不知道的值就先給 `None`，用專案中馬達設計的部分呈現如下。
+1. Convert Specifications to **Motor Model Data** and **Electrical Data** by hand.
+2. Record all the **steps** in the middle, and the **data name** used in them.
+3. Classify **Data Name** according to the concept of **Step** (stator, magnet, electrical...etc). Use the `dict data structure` to collect it, and give it to `None` if you don't know the value. The motor design part of the project is presented as follows.
 
 ```python
 motor_cal_params = {
@@ -103,7 +104,7 @@ motor_cal_params = {
 }
 ```
 
-4. 將步驟拆成小的function，專案中馬達設計的部分如下
+4. Divide the steps into small functions, the motor design part of the project is as follows
 
 ```python
 def ktke_calculation(total_cal_params):
@@ -132,7 +133,7 @@ def expend_magnet(total_cal_params):
     return total_cal_params
 ```
 
-5. 將 3. 的數值dict貫穿 4. 的所有function (3.的 `motor_cal_params` 放在 `ctx[params]`中)
+5. Put data dict from step 3 in step 4 functions pipeline
 
 ```python
 total_cal_params = ctx["params"]
@@ -148,15 +149,15 @@ ktke_calculation(total_cal_params) and \
 
 ```
 
-6. Ansys maxwell 的溝通部分也是用同樣的方式，可參考 [這裡](https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online/tree/master/software)
+6. The communication part of Ansys maxwell is also in the same way, please refer to [here](https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online/tree/master/software)
 
 ## Conclusion
 
-使用上述的方法，是不是很單純，且很直觀就能看懂設計的過程，debug也非常容易，執行程式時將`total_cal_params` 印出來看就好。
+Using the above method, is it very simple and intuitive to understand the design process, and debugging is also very easy, just print `total_cal_params` when executing the program.
 
-當整個程式設計完成後，接下來就是去優化每一個 function & data 讓它們更容易被看懂，更能直觀的對應馬達設計。
+When the entire program design is completed, the next step is to optimize each function & data to make them easier to understand and more intuitive to correspond to the motor design.
 
-更詳細可參考[我的設計](https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online/blob/master/run.py)，未來還會持續的優化設計。
+For more details, please refer to [My Design](https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online/blob/master/run.py), and the design will continue to be optimized in the future.
 
 
 

@@ -4,7 +4,7 @@ date: 2021-03-05
 keyword:
 - python
 description: Serious-Python 讀書筆記(5) - 當project build到某一個程度，你會希望能有一個方便安裝的方式提供給終端的使用者，在python當中提供了許多工具來完成這個部分，通常都會放在 setup.py 中，接下來就來好好探討這個部分，順便distributing我的project "anmotordesign" 到pypi上。
-draft: false
+draft: true
 hideToc: false
 enableToc: true
 enableTocContent: true

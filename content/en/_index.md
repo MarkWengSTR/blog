@@ -8,7 +8,7 @@ header:
     title:
       - EM programmer & Music
     subtitle:
-      - Electric Machine design, program, web development, Jazz
+      - Electric Machine design, web development, Jazz Music
     titleColor:
     titleShadow: true
     titleFontSize: 44

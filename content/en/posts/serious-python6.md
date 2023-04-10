@@ -4,7 +4,7 @@ date: 2021-03-07
 keyword:
 - python
 description: Serious-Python 讀書筆記(6) - 寫code如果沒有test的話，基本上是沒有用，因為沒有辦法證明它是有效的。
-draft: false 
+draft: true 
 hideToc: false
 enableToc: true
 enableTocContent: true

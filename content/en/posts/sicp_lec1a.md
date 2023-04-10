@@ -1,6 +1,6 @@
 ---
-title: SICP - The Elements of Programming
-date: 2020-08-10
+title: Functional programming serious - The Elements of Programming in SICP
+date: 2020-07-10
 keyword:
 - sicp
 description: the fundamental of computer science, black-box abstraction and Conventional interface
@@ -16,7 +16,9 @@ image:
 
 
 
-## SICP 1a - The Elements of Programming
+## 重點摘要
+
+本篇取自[SICP-1a](https://www.youtube.com/watch?v=IcZSFewqr9k&list=PLkEwH_Z2WOlppy8oUfrGwFVlOuKyo3RO_)，解釋最基礎的computer science
 
 ## What is computer science
 
@@ -39,50 +41,34 @@ image:
   - object-oriented programming
   - operations on aggregate (流)
 - Metalinguistic Abstraction: 定義一個新語言 (用lisp做一個解析器來解析lisp)
+本篇不討論第二項與第三項，純粹討論最基礎的第一項。
 
-## black-box abstraction
+## 用一個例子解釋何謂black-box abstraction
 
-### Example: Square root algorithm  
+### Square root algorithm - 將數字開根號(x^0.5)
 
-#### process of algorithm (find an approximation to x^0.5)
+計算過程:
 
 - Make a guess G (猜一個值 G)
 - Improve the guess by average G and x/G  (對於 G + x/G 的平均值做優化)
 - Keep improving the guess until it is good enough (持續優化到足夠正確)
 
-#### Generality function - Fixed Point
+由上述的process，可以看出一個 "通則" (猜值 -> 優化 -> 持續優化到正確)，
 
-由上述的process，可以看出一個 "通則" (猜值 -> 優化 -> 持續優化到正確)
+"找尋函數不動點" 的 定理為 F(函數)有一不動點值滿足 F(Y) = Y，
 
- "找尋函數不動點" 的 定理為 F(函數)有一不動點值滿足 F(Y) = Y
+而開根號的計算流程 ，可以視為 “找尋函數不動點” 這個通則 的其中一種方法: 找尋 Y與 x/Y的平均值函數的不動點。 (ex: F= (Y + x/Y)/2, 可以用 x = 36, Y = 6 來試試)
 
-拉更高層次來看的話，process of Square root algorithm ，可以視為 "找尋函數不動點" 這個通則 的其中一種方法: 找尋 Y與 x/Y的平均值函數的不動點。 (F= (Y + x/Y)/2, 可以用 x = 36, Y = 6 來試試)
+computer science 就是透過設計各式各樣的元件來解決問題，SICP提供了撰寫元件時可依循的想法
 
-這帶出一些觀念
+1. 解決問題的時候，將流程寫出來。
 
-1. 當解決一個問題的時候，將流程寫出來。
+2. 想想是否解決這個單一問題，是一個通用問題的其中一個應用 (產生自 通用函數 )
 
-2. 想想是否解決這個單一問題，是一個通用問題的其中一個應用 
+看上述的問題，本來以為開根號函數非常的複雜，但抽出通用函數之後，我們把複雜度切成 Y, x/Y兩個參數的平均值 與“找尋函數不動點”的通用函數 這兩件事情，複雜度就被限縮在怎麼實作 "找尋函數不動點"這件事情上，這樣持續的做下去，複雜度是不是就層層的減低了呢?
 
-3. **解決單一問題的函數，產生自 <u>通用函數</u> 接受一個特定目的的函數** (ex: 找平方根的函數 產生自 <u>找尋不動點函數</u> 接收 (Y + x/Y)/2 = Y 這個函數)
+## 總結
 
-### black-box abstraction details
+black-box abstraction可由開根號函數看出，使用此函數其實不必知道開根號函數裡面的實作細節，反正調用它，就能達到需求，這是上述提到的第一個關鍵。 而第二個關鍵找到通用性是為了降低複雜度。
 
-後續會更深入的解析 "黑盒抽象"，大概可以分成幾個部分
-
-- Primitive Object (lisp 的基本對象)
-  - Primitive Procedure (基本過程)
-  - Primitive data (基本數據)
-- Means of combination (組合基本對象的方法)
-  -  Procedure composition
-  - Construction of compound data
-- Means of abstraction (如何抽象)
-  - Procedure definition
-  - Simple data abstraction
-- Capturing common patterns (如何利用領域的專業，找到通用函數?)
-  - High order procedure (高階過程 像是上述的 平方根函數)
-  - data as function (最後越來越抽象時，數據與函數的界線會越來越模糊)
-
-## Conventional interface
-
-同樣一個方程式 `(*x (+ a1 a2))` 用於 **純數字、向量、信號波形，或是a1 a2不是數值，而是多項式、分數...等**
+當然這只是第一堂課，但也是最核心的觀念，後面會持續使用這個觀念來解決更多問題。

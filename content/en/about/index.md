@@ -2,21 +2,22 @@
 title = "關於我"
 description = "My Stories to be continue..."
 type = "about"
-date = "2020-05-16"
 +++
 
+## 基本資料
+* 本名: 翁佑甯
+
 ## 經歷
-* 電機設計、磁路分析 -- from 2012
+* electric mechine design -- from 2012
 * web developer -- from 2018
-* Bassist -- from 2005
+* large motor & generator mantainance, High Voltage Machine Partial discharge measurement, IOT hardware installation and API integration  -- from 2021
 
-## 工具
-* 磁路分析軟體: Ansys maxwell, FEMM
-* Programming language: ruby, python, clojure, rust
+## 擅長工具
+* 磁路分析軟體: Ansys maxwell, FEMM, JMAG
+* Programming: linux, vim, ruby, python, clojure, javascript
 
-## 喜好曲風
-* Jazz, Funk, Gospel ...
-
-
-
-
+## 音樂
+* 2005年開始彈奏BASS
+* 2014年開始接觸並練習爵士樂
+* 2019年加入甘苦人樂團出了一張[專輯](https://www.books.com.tw/products/0020214562)
+* 擅長Jazz, Funk, Gospel ...

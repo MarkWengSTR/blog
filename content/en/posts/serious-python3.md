@@ -4,7 +4,7 @@ date: 2021-02-24
 keyword:
 - python
 description: Serious-Python 讀書筆記(3) - Documentation 是非常重要的一件事，雖然寫doc是一件感覺非常煩雜的事，但其實不需要，python developer有很好的工具來幫助這件事。
-draft: false
+draft: true
 hideToc: false
 enableToc: true
 enableTocContent: true
