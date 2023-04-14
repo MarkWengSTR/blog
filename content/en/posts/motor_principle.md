@@ -23,13 +23,11 @@ math: true
 
 而馬達是什麼? [維基百科](https://zh.wikipedia.org/wiki/电动机) 裡面提到，最重要的原理就是 **電能 -> 機械能** ，描述的更準確一點，其實是  **電能 -> 磁能 -> 機械能**  。
 
-
-
 ## 馬達設計 是什麼? (What is motor design)
 
 馬達設計，就是設計 **電能 -> 磁能 -> 機械能**  中間的 **磁能**， 讓電能 **有效率** 的轉換為機械能。 也就是可以在有限制的體積、重量條件，達成最大的輸出功率以及效率，因此評估馬達的指標通常會使用轉矩密度、功率密度、效率...等指標。
 
-## 勞倫茲力 (Lorentz force) 
+## 勞倫茲力 (Lorentz force)
 
  [勞倫茲力 (Lorentz force)](https://zh.wikipedia.org/wiki/洛伦兹力)  :  **F (force density) =  $\sigma$( charge density) E (electric field)+ J (current density) x B (magnetic density)**
 
@@ -37,7 +35,7 @@ math: true
 
 #### 換算馬達轉矩 Torque
 
-如果是旋轉電機的話，**f = ilB** 會怎麼樣變化呢 ? 
+如果是旋轉電機的話，**f = ilB** 會怎麼樣變化呢 ?
 
 - 單極的電磁轉矩： 首先加上轉軸距離 (轉子半徑) **r** -> **T = ilBr**
 - N, S極：馬達裡的磁鐵有N, S極，線圈也是一進一出，因此真正的轉矩為  **T = 2ilBr**

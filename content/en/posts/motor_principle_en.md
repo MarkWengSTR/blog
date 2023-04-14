@@ -29,7 +29,7 @@ What is a motor? [Wikipedia](https://zh.wikipedia.org/wiki/Motor) It is mentione
 
 Motor design is to design **electrical energy -> magnetic energy -> mechanical energy** in the middle of **magnetic energy**, so that electrical energy can be converted into mechanical energy **efficiently**.
 
-## Lorentz force 
+## Lorentz force
 
  [Lorentz force](https://zh.wikipedia.org/wiki/洛伦兹力)  :  **F (force density) =  $\sigma$( charge density) E (electric field)+ J (current density) x B (magnetic density)**
 
@@ -75,13 +75,13 @@ If the above two formulas are divided and cross-multiplied, **$\epsilon$ * i** i
 
 ## Parameters of motor design
 
- **2NBlr** is the magnetic part, and also points out the four most important parameters in the motor, 
+ **2NBlr** is the magnetic part, and also points out the four most important parameters in the motor,
 
-**n (the number of coil turns)**, 
+**n (the number of coil turns)**,
 
-**B (the stator and rotor air gap magnetic flux density)**, 
+**B (the stator and rotor air gap magnetic flux density)**,
 
-**l (the effective length of the motor)**, 
+**l (the effective length of the motor)**,
 
 **r (radius of stator and rotor air gap)**,
 

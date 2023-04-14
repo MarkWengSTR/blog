@@ -158,8 +158,3 @@ Using the above method, is it very simple and intuitive to understand the design
 When the entire program design is completed, the next step is to optimize each function & data to make them easier to understand and more intuitive to correspond to the motor design.
 
 For more details, please refer to [My Design](https://github.com/MarkWengSTR/ansys-maxwell-EM-design-online/blob/master/run.py), and the design will continue to be optimized in the future.
-
-
-
-
-

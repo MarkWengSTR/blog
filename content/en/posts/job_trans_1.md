@@ -2,7 +2,7 @@
 title: 30歲轉換跑道，離開大企業穩定工作從零轉職網頁全端工程師，歷程分享(1)
 date: 2022-06-03
 description: 這次想分享我到底怎麼從零轉職網頁全端工程師的，轉職之前是什麼背景、具備什麼基礎、是什麼原因讓我想要轉職、如何真的轉職成功、轉職成功後遇到什麼困難、如何克服這些困難、而最後又為什摩要回到馬達的領域裡面。
-draft: true
+draft: false
 hideToc: false
 enableToc: true
 enableTocContent: true

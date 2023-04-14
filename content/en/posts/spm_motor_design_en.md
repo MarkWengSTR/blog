@@ -94,4 +94,3 @@ From a reasonable **pc operating point**, the **magnet thickness** is calculated
 ## conclusion
 
 In the above calculation, the parameters and detailed dimensions required for the entire motor have been designed. In fact, there are many factors to be considered in motor design. Each designer will also have his own set of methods. The above is my own method, indeed It can be developed into a reasonable and specification-compliant design by calculation. Currently, it is limited to 10p12s. In the future, it is hoped that it will become a general design method, which can design various slot configurations and can be extended to IPM or induction motors.
-
